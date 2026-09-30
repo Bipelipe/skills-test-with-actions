@@ -42,7 +42,7 @@ def test_area_of_circle_negative_radius():
     result = area_of_circle(radius)
 
     # Assert
-    assert result is None
+    assert result is ValueError("Radius cannot be negative")
 
 
 def test_get_nth_fibonacci_zero():
@@ -89,4 +89,4 @@ def test_get_nth_fibonacci_negative():
     result = get_nth_fibonacci(n)
 
     # Assert
-    assert result is None
+    assert result is ValueError("n cannot be negative")
